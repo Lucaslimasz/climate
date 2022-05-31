@@ -5,7 +5,15 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  max-width: 768px;
+  margin: auto;
+  padding: 20px;
+
   img {
     width: 25px;
+  }
+
+  h2 {
+    color: ${({theme}) => theme.title};
   }
 `;

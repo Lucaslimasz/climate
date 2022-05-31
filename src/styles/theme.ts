@@ -1,6 +1,7 @@
 export const darkTheme = {
   background: '#23262B',
 
+  title: '#F4F1EF',
   text_primary: '#F4F1EF',
   text_secundary: '#90939A',
   
@@ -9,11 +10,12 @@ export const darkTheme = {
 }
 
 export const lightTheme = {
-  background: 'red',
-
-  text_primary: '#F4F1EF',
-  text_secundary: '#90939A',
+  background: '#F4F1EF',
   
-  card: '#333740',
+  title: '#2B72F4',
+  text_primary: '#F4F1EF',
+  text_secundary: '#333740',
+  
+  card: '#2B72F4',
   card_secundary: '#2B72F4'
 }

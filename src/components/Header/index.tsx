@@ -1,12 +1,21 @@
-import Sun from '../../assets/icons/sun.svg'
+import DarkModeToggle from "react-dark-mode-toggle";
 
 import * as S from "./styles";
 
-export default function Header() {
+interface HeaderProps {
+  isLightTheme: boolean;
+  handleTheme: () => void;
+}
+
+export default function Header({ isLightTheme, handleTheme }: HeaderProps) {
   return (
     <S.Container>
-      <h2>João Pessoa</h2>
-      <img src={Sun} alt="theme" />
+      <h2>Climate</h2>
+      <DarkModeToggle
+        onChange={handleTheme}
+        checked={isLightTheme}
+        size={50}
+      />
     </S.Container>
   );
 }

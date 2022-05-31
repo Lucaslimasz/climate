@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 interface ThemeStyles {
   theme: {
     background: string;
+    title: string;
     text_primary: string;
     text_secundary: string;
     card: string;

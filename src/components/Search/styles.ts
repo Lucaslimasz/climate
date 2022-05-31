@@ -13,6 +13,7 @@ export const Container = styled.div`
   }
   input {
     background-color: transparent;
+    color: ${({theme}) => theme.text_secundary};
   }
   button {
     margin-left: auto;
