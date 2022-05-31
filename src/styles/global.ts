@@ -28,6 +28,8 @@ textarea,
 button {
   font: 500 1rem Inter, sans-serif;
   color: ${({theme}) => theme.text_primary};
+  outline: none;
+  border: none;
 }
 
 h1 {

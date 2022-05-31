@@ -1,13 +1,16 @@
-import Header from '../../components/Header';
-import WeatherData from '../../components/WeatherData';
+import WeatherData from "../../components/WeatherData";
 
-import * as S from './styles';
+import Header from "../../components/Header";
 
-export default function Home(){
+import * as S from "./styles";
+import Search from "../../components/Search";
+
+export default function Home() {
   return (
     <S.Container>
       <Header />
+      <Search />
       <WeatherData />
     </S.Container>
-  )
+  );
 }
