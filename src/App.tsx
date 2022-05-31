@@ -12,7 +12,6 @@ function App() {
   const handleTheme = () => {
     setIsLightTheme(prevState => !prevState)
   }
-
   return (
     <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
       <Global />

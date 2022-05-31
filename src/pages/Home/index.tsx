@@ -6,6 +6,7 @@ import WeatherData from "../../components/WeatherData";
 import ClimateHistory from "../../components/ClimateHistory";
 
 export default function Home() {
+
   return (
     <S.Container>
       <Search />

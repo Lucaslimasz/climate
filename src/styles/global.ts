@@ -19,8 +19,22 @@ export default createGlobalStyle<ThemeStyles>`
 }
 
 body {
-  background: ${({ theme }) => theme.background};
-  color: ${({theme}) => theme.text_primary};
+  background: #F4F1EF;
+  color: ${({ theme }) => theme.text_primary};
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #23262B;
+  transform: translateX(100%);
+  transition: transform .5s linear;
+  z-index: -1;
+  transform: ${({ theme }) =>
+    theme.background !== "#F4F1EF" && "translateX(0)"};
 }
 
 body,
@@ -28,7 +42,7 @@ input,
 textarea,
 button {
   font: 500 1rem Inter, sans-serif;
-  color: ${({theme}) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   outline: none;
   border: none;
 }
@@ -45,7 +59,7 @@ h5,
 h6 {
   font-weight: 600;
   font-family: Lexend, sans-serif;
-  color: ${({theme}) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
 }
 
 h2 {
