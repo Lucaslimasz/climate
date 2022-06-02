@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: ${({theme}) => theme.card};
+  background-color: ${({ theme }) => theme.card};
   border-radius: 25px;
   padding: 25px;
 
@@ -13,21 +13,27 @@ export const Container = styled.div`
     width: 150px;
   }
 
-  >div {
+  > div {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     span {
-      font-size: 60px;  
+      font-size: 60px;
+    }
+    > p {
+      color: ${({theme}) => theme.text_secundary};
+      font-size: 12px;
+      margin-top: 4px;
+      text-transform: capitalize;
     }
     div {
       display: flex;
-      align-items: end;
-      margin-top: 10px;
+      align-items: center;
+      margin-top: 4px;
 
       img {
-        width: 12px;
-        margin-right: 10px;
+        width: 10px;
+        margin-right: 5px;
       }
       p {
         font-size: 15px;

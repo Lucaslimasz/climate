@@ -12,6 +12,7 @@ export const Container = styled.div`
     margin-right: 1.25rem;
   }
   input {
+    width: 100%;
     background-color: transparent;
     color: ${({theme}) => theme.text_secundary};
   }
