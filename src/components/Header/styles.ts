@@ -14,7 +14,6 @@ export const Container = styled.header`
   }
 
   h2 {
-    transition: color .5s linear;
     color: ${({theme}) => theme.title};
   }
 `;

@@ -16,6 +16,9 @@ export default createGlobalStyle<ThemeStyles>`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  transition: color .5s linear;
+  transition: background .5s linear;
 }
 
 body {

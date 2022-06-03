@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
-import Ensolarado from "../../assets/icons/ensolarado.png";
 import Location from "../../assets/icons/location.svg";
+import { ImageForTheWeather } from "../../utils/imageForTheWeather";
 
 interface Informations {
   temp: number;
@@ -17,7 +17,7 @@ interface WeatherDataProps {
 export default function WeatherData({ informations }: WeatherDataProps) {
   return (
     <S.Container>
-      <img src={Ensolarado} alt="" />
+      {ImageForTheWeather(`${informations?.description}`)}
       <div>
         <span>{Math.round(informations?.temp) || 0}º</span>
         <div>

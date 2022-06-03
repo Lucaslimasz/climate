@@ -1,22 +1,31 @@
 import * as S from "./styles";
 
-import Nuvem from "../../assets/icons/chuva.webp";
-import Sol from "../../assets/icons/sol.png";
-import Ensolarado from "../../assets/icons/ensolarado.png";
+import { ImageForTheWeather } from "../../utils/imageForTheWeather";
 
-export default function CardClimateHistory() {
+interface Informations {
+  temp: number;
+  description: string;
+  main: string;
+  city: string;
+}
+
+interface WeatherDataProps {
+  informations?: Informations;
+}
+
+export default function CardClimateHistory({ informations }: WeatherDataProps) {
   return (
     <S.Container>
       <div className="informations">
         <div>
-          <span>18º</span>
+          <span>{informations?.temp || 0}º</span>
           <strong>C</strong>
         </div>
-        <b>João Pessoa</b>
-        <p>Pancadas de chuva</p>
+        <b>{informations?.city || "city"}</b>
+        <p>{informations?.description || "status"}</p>
       </div>
 
-      <img src={Nuvem} alt="" />
+      {ImageForTheWeather(`${informations?.description}`)}
     </S.Container>
   );
 }

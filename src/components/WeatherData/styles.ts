@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.card};
   border-radius: 25px;
-  padding: 25px;
+  padding: 25px 60px;
 
   display: flex;
   justify-content: space-between;
   align-items: end;
 
   img {
-    width: 150px;
+    max-height: 113px;
   }
 
   > div {
